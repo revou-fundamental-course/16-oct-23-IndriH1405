@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>My Website</title>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-logo">
+            <img src="./assets/logo.png" alt="logo">
+        </div>
+        <nav class="nav-bar">
+            <a href="#" class="nav-item-home">Home</a>
+            <a href="#our-profile" class="nav-item">Our Profile</a>
+            <a href="#portofolio" class="nav-item">Portofolio</a>
+            <a href="#message-us" class="nav-item-message">Message Us</a>
+        </nav>
+    </header>
+    
+    <!-- HOME -->
+    <section class="banner">
+        <div class="greetings">
+            <h1>Hi, My Name is Indri</h1>
+            <p>Ini adalah website latihan pertama</p>
+        </div>
+        <img src="./assets/banner.jpg" alt="banner">
+    </section>
+    <!-- HOME END-->
+    
+    <!--OUR PROFILE -->
+    <section class="our-profile" id="our-profile">
+        <div class="about-container">
+            <h1 class="about-title">About the Company</h1>
+                <p class="p-about"><img src="./assets/indofood.jpg" alt="indofood tower">PT Indofood Sukses Makmur Tbk (Indofood) adalah produsen, 
+                    pemasar dan distributor produk makanan. Perusahaan FMCG ini bergerak 
+                    dalam berbagai sektor, termasuk produsen mie, susu, tepung, pasta, 
+                    bumbu makanan, nutrisi dan makanan khusus, serta makanan ringan.</p>
+                <br>
+                <p class="p-about">Indofood memasarkan produknya dengan berbagai nama brand 
+                    seperti Indomie, Supermi, Indomilk, Enaak, Tiga Sapi Happy, 
+                    Freiss, Govit, Promina, Chitato Lite, Maxicorn, Fruitamin,
+                    Orchid Butter, Club, Milkuat, Segitiga Biru, dan lain-lain.</p>
+                <br>
+                <p class="p-about">Bisnis lainnya meliputi pengemasan, pembibitan benih kelapa sawit, 
+                    budidaya, branding dan pemasaran minyak goreng, margarin dan shortening.<br>
+                    Perusahaan Indofood beroperasi di Indonesia, Asia, Timur Tengah dan Afrika. 
+                    Indofood berkantor pusat di Jakarta, Indonesia.</p>
+        </div>
+            
+        <div class="visi-misi-container">
+            <div class="visi">
+                <div class="visi-title">Visi</div>
+                <p class="p-visi">“Menjadi perusahaan yang dapat memenuhi kebutuhan pangan
+                                    dengan produk bermutu, berkualitas, aman untuk 
+                                    dikonsumsi dan menjadi pemimpin di industri makanan”</p>
+            </div>
+            <div class="misi">
+                <div class="misi-title">Misi</div>
+                <p class="p-misi">“Menjadi perusahaan transnasional<br>
+                                    yang dapat membawa nama Indonesia<br>
+                                    di bidang industri makanan”</p>
+            </div>
+        </div>
+
+        <div class="our-hq">
+            <h1 class="hq-title">Visit Our Headquarters!</h1>
+            <div class="hq-container">
+                <figure>
+                    <img src="./assets/Jakarta.jpg" alt="Jakarta">
+                    <figcaption><b>Jakarta</b></figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/Bandung.jpg" alt="Bandung">
+                    <figcaption><b>Bandung</b></figcaption>
+                </figure>
+                <figure>
+                    <img src="./assets/Surabaya.JPG" alt="Surabaya">
+                    <figcaption><b>Surabaya</b></figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+    <!-- OUR PROFILE END -->
+
+    <!-- PORTOFOLIO -->
+    <section class="portofolio" id="portofolio">
+        <h1 class="porto-title">Our Products</h1>
+        <div class="porto-container">
+            <figure>
+                <img src="./assets/porto-1.jpg" alt="indomie">
+                <figcaption class="fig-indomie"><b>Indomie</b></figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/porto-2.jpeg" alt="chitato">
+                <figcaption class="fig-indomie"><b>Chitato</b></figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/porto-3.jpg" alt="milkuat">
+                <figcaption class="fig-indomie"><b>Milkuat</b></figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- PORTOFOLIO END -->
+
+    <!-- MESSAGE US -->
+    <section class="message-us" id="message-us">
+        <div class="form">
+            <h1 class="form-title">Message Us</h1>
+
+            <div class="form-container">
+                <div class="form-group">
+                    <label id="nama">Nama</label>
+                    <span class="colon">:</span>
+                    <input type="text" placeholder="Nama">
+                </div>
+
+                <div class="form-group">
+                    <label id="tanggal lahir">Tanggal Lahir</label>
+                    <span class="colon">:</span>
+                    <input type="date">
+                </div>
+                
+                <div class="form-group">
+                    <label id="jenis kelamin">Jenis Kelamin</label>
+                    <span class="colon">:</span>
+                    <input type="radio" id="laki-laki" name="jenis kelamin" value="Laki-Laki"/>
+                    <label id="laki-laki">Laki-Laki</label>
+                    <input type="radio" id="perempuan" name="jenis kelamin" value="Perempuan"/>
+                    <label id="perempuan">Perempuan</label>
+                </div>
+
+                <div class="form-group">
+                    <label id="pesan">Pesan</label>
+                    <span class="colon">:</span>
+                    <input type="textarea" placeholder="Pesan">
+                </div>
+
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="result-place">
+            <div><b>Current time :</b></div>
+            <br>
+            <div><b>Nama:</b></div>
+            <div><b>Tanggal Lahir:</b></div>
+            <div><b>Jenis Kelamin:</b></div>
+            <div><b>Pesan:</b></div>
+        </div>
+    </section>
+    <!-- MESSAGE US END -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <b>Created by Indri Hapsari @ 2023</b>
+    </footer>
+    <!-- FOOTER END -->
+</body>
+</html>

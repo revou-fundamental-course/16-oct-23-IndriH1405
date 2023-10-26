@@ -22,7 +22,7 @@
     <!-- HOME -->
     <section class="banner">
         <div class="greetings">
-            <h1>Hi, My Name is Indri</h1>
+            <h1>Hi, <span id="name">Indri</span>!</h1>
             <p>Ini adalah website latihan pertama</p>
         </div>
         <img src="./assets/banner.jpg" alt="banner">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="our-hq">
-            <h1 class="hq-title">Visit Our Headquarters!</h1>
+            <h1 class="hq-title">Our Headquarters</h1>
             <div class="hq-container">
                 <figure>
                     <img src="./assets/Jakarta.jpg" alt="Jakarta">
@@ -106,48 +106,46 @@
 
     <!-- MESSAGE US -->
     <section class="message-us" id="message-us">
-        <div class="form">
+        <form class="form" name="form" onsubmit="return validateForm()">
             <h1 class="form-title">Message Us</h1>
 
             <div class="form-container">
                 <div class="form-group">
-                    <label id="nama">Nama</label>
+                    <label>Nama</label>
                     <span class="colon">:</span>
-                    <input type="text" placeholder="Nama">
+                    <input type="text" id="nameInput" name="nameInput" placeholder="Nama">
                 </div>
 
                 <div class="form-group">
-                    <label id="tanggal lahir">Tanggal Lahir</label>
+                    <label>Tanggal Lahir</label>
                     <span class="colon">:</span>
-                    <input type="date">
+                    <input type="date" id="birth-date" name="birth-date">
                 </div>
                 
                 <div class="form-group">
-                    <label id="jenis kelamin">Jenis Kelamin</label>
+                    <label>Jenis Kelamin</label>
                     <span class="colon">:</span>
-                    <input type="radio" id="laki-laki" name="jenis kelamin" value="Laki-Laki"/>
-                    <label id="laki-laki">Laki-Laki</label>
-                    <input type="radio" id="perempuan" name="jenis kelamin" value="Perempuan"/>
-                    <label id="perempuan">Perempuan</label>
+                    <input type="radio" id="male" name="gender" value="Laki-Laki"/>
+                    <label for="male">Laki-Laki</label>
+                    <input type="radio" id="female" name="gender" value="Perempuan"/>
+                    <label for="female">Perempuan</label>
                 </div>
 
                 <div class="form-group">
-                    <label id="pesan">Pesan</label>
+                    <label>Pesan</label>
                     <span class="colon">:</span>
-                    <input type="textarea" placeholder="Pesan">
+                    <input type="textarea" name="messages" placeholder="Pesan">
                 </div>
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="submitButton">Submit</button>
             </div>
-        </div>
+        </form>
 
         <div class="result-place">
-            <div><b>Current time :</b></div>
-            <br>
-            <div><b>Nama:</b></div>
-            <div><b>Tanggal Lahir:</b></div>
-            <div><b>Jenis Kelamin:</b></div>
-            <div><b>Pesan:</b></div>
+            <div><b>Nama:</b> <span id="nama"></span></div>
+            <div><b>Tanggal Lahir:</b> <span id="bday"></span></div>
+            <div><b>Jenis Kelamin:</b> <span id="jeniskelamin"></span></div>
+            <div><b>Pesan:</b> <span id="pesan"></span></div>
         </div>
     </section>
     <!-- MESSAGE US END -->
@@ -157,5 +155,6 @@
         <b>Created by Indri Hapsari @ 2023</b>
     </footer>
     <!-- FOOTER END -->
+    <script src="js/script.js"></script>
 </body>
 </html>

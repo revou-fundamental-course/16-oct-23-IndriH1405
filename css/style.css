@@ -316,7 +316,7 @@ html {
     font-family: Calibri;
     border: 1px solid black;
     margin: 40px 30px 40px 30px;
-    padding: 50px 300px 50px 5px;
+    padding: 60px 300px 50px 5px;
 }
 
 /* Footer */
@@ -326,4 +326,70 @@ html {
     justify-content: right;
     color: white;
     padding: 30px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1000px){
+    .header{
+        flex-direction: column;
+    }
+
+    .nav-bar {
+        width: 80%;
+        margin: 0px 0px 10px 0px;
+        flex-direction: column;
+    }
+
+    .nav-logo img {
+        margin: 5px 0px 5px 0px;
+    }
+
+    .greetings {
+        margin: 10px 0px 0px 30px;
+    }
+
+    .banner img {
+        margin: 30px;
+        width: 90%;
+    }
+
+    .our-profile {
+        justify-content: center;
+    }
+
+    .visi-misi-container {
+        padding-left: 20%;
+        flex-direction: column;
+    }
+
+    .visi {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .hq-container {
+        flex-direction: column;
+    }
+
+    .porto-container {
+        flex-direction: column;
+    }
+
+    .message-us {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .form {
+        padding-left: 30px;
+    }
+
+}
+
+@media only screen and (min-width: 1920px){
+    .banner img {
+        width: 100%;
+    }
 }

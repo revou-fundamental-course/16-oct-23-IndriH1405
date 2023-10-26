@@ -76,9 +76,39 @@ html {
 }
 
 /* Banner */
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.button-prev {
+    background-color: rgb(189, 189, 189);
+    opacity: 80%;
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+    font-size: 30px;
+    color:white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
+.button-next {
+    background-color: rgb(255, 115, 115);
+    opacity: 80%;
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    color:white;
+    border: 1px solid transparent;
+    border-radius: 50%;
+}
+
 .banner {
     background-color: rgb(255, 255, 122);
-    padding: 30px 0px 70px 0px;
+    padding: 30px 0px 50px 0px;
     border-bottom: 5px solid rgb(255, 255, 255);
 }
 

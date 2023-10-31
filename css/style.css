@@ -28,7 +28,7 @@ html {
 
 .nav-item {
     padding: 2px 25px;
-    min-width: 80px;
+    min-width: 90px;
     border: 0.5px solid white;
     color: white;
     text-align: center;
@@ -43,7 +43,7 @@ html {
 
 .nav-item-home {
     padding: 2px 25px;
-    min-width: 80px;
+    min-width: 90px;
     border: 0.5px solid white;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -60,7 +60,7 @@ html {
 
 .nav-item-message {
     padding: 2px 25px;
-    min-width: 80px;
+    min-width: 90px;
     border: 0.5px solid white;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -359,16 +359,6 @@ html {
 }
 
 /* Responsive */
-@media only screen and (min-width: 1000px){
-    .banner img {
-        width: 100%;
-    }
-
-    .porto-container {
-        display: flex;
-        justify-content: space-around;
-    }
-}
 
 @media only screen and (max-width: 1000px){
     .header{
@@ -391,7 +381,7 @@ html {
 
     .banner img {
         margin: 30px;
-        width: 90%;
+        width: 93%;
     }
 
     .our-profile {
@@ -428,7 +418,7 @@ html {
 
 }
 
-@media only screen and (min-width: 1000px){
+@media only screen and (min-width: 1100px){
     .banner img {
         width: 100%;
     }
@@ -440,9 +430,9 @@ html {
 }
 
 @media only screen and (min-width: 1920px){
-    .banner img {
+.banner img {
         width: 100%;
-    }
+}
 
 .our-profile {
     padding: 40px;
